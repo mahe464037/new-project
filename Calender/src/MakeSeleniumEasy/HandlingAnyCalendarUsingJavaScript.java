@@ -10,7 +10,7 @@ public class HandlingAnyCalendarUsingJavaScript {
 
 	public static void setDateUsingJavaScriptInCalendar(WebDriver driver, String value, WebElement calLocator)
 	{
-		System.out.println("CALENDER");
+	
 		JavascriptExecutor jse= (JavascriptExecutor)driver;
 		String script= "arguments[0].setAttribute('value','"+value+"');";
 		jse.executeScript(script, calLocator);
